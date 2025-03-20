@@ -11,13 +11,13 @@ public static class StatUtils
     {
         if (entity == null)
         {
-            L.Info("[StatUtils] Entity is null. No statistics available.");
+            LL.Info("[StatUtils] Entity is null. No statistics available.");
             return new Dictionary<string, Statistic>();
         }
 
         if (entity.Statistics == null)
         {
-            L.Info($"[StatUtils] {entity.DisplayName} has no statistics.");
+            LL.Info($"[StatUtils] {entity.DisplayName} has no statistics.");
             return new Dictionary<string, Statistic>();
         }
 
@@ -65,11 +65,11 @@ public static class StatUtils
         {
             int amount = RandomUtils.NextInt(minIncrease, maxIncrease);
             statObj.BaseValue += amount;
-            L.Info($"[StatUtils] {statName} increased by {amount}. New value: {statObj.BaseValue}");
+            LL.Info($"[StatUtils] {statName} increased by {amount}. New value: {statObj.BaseValue}");
         }
         else
         {
-            L.Info($"[StatUtils] {statName} does not exist in Statistics.");
+            LL.Info($"[StatUtils] {statName} does not exist in Statistics.");
         }
     }
 
@@ -128,7 +128,7 @@ public static class StatUtils
     {
         if (entity == null || !entity.IsPlayer())
         {
-            L.Info($"[StatUtils] {entity?.DisplayName ?? "Unknown Entity"} is not a player. Skipping stat increase.");
+            LL.Info($"[StatUtils] {entity?.DisplayName ?? "Unknown Entity"} is not a player. Skipping stat increase.");
             return;
         }
 

@@ -1,6 +1,6 @@
 {
 	"id": "LaurusCoreLib",
-	"loadorder": 1,
+	"loadorder": -10,
 	"title": "{{glotrot|Laurus Core}}",
 	"description": "Core Laurus Library.",
 	"tags": "library",
