@@ -4,7 +4,7 @@ using XRL.World;
 namespace XRL.World.Parts
 {
     [Serializable]
-    public class AddStatsOnCreated : OnObjectCreatedHandler
+    public class AddStatsOnCreated : GenericOnEntityCreatedPart
     {
 
         protected override bool ShouldRun(GameObject entity)

@@ -1,7 +1,10 @@
 public enum LogCategory
 {
-Setup,
-Debug,
-Harmony,
-Error
+    Setup,
+    Debug,
+    Harmony,
+    System,
+    Info,
+    Warning,
+    Error
 }

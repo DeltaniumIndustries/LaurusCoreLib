@@ -1,10 +1,10 @@
 {
 	"id": "LaurusCoreLib",
 	"loadorder": -10,
-	"title": "{{glotrot|Laurus Core}}",
+	"title": "{{rainbow|Laurus Core}}",
 	"description": "Core Laurus Library.",
 	"tags": "library",
 	"version": "1.0.1",
-	"author": "{{glotrot|LunarLaurus}}",
+	"author": "{{rainbow|LunarLaurus}}",
 	"previewImage": "preview.png"
 }

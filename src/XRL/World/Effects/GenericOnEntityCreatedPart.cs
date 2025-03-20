@@ -1,5 +1,4 @@
 using System;
-using XRL.World;
 
 namespace XRL.World.Parts
 {
@@ -9,7 +8,7 @@ namespace XRL.World.Parts
     /// when the object is created.
     /// </summary>
     [Serializable]
-    public abstract class OnObjectCreatedHandler : IPart
+    public abstract class GenericOnEntityCreatedPart : IPart
     {
         /// <summary>
         /// Determines whether this part wants to handle a specific event.
