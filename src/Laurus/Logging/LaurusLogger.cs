@@ -2,22 +2,23 @@ using UnityEngine;
 
 public class LL
 {
-    public static void Info(string msg, LogCategory catgeory)
+    public static void Info(string msg, LogCategory category)
     {
-        if (!ConfigHandler.GLOBAL_LOGGING_ENABLED)
+        if (!ConfigHandler.GLOBAL_LOGGING_ENABLED ||
+            (!ConfigHandler.GLOBAL_LOGGING_DEBUG_ENABLED && category == LogCategory.Debug) ||
+            string.IsNullOrEmpty(msg))
         {
+            if (string.IsNullOrEmpty(msg))
+            {
+                Debug.LogWarning("[Laurus] Attempted to log an empty or null message.");
+            }
             return;
         }
-        if (!string.IsNullOrEmpty(msg))
-        {
-            var prefixText = "[Laurus]" + catgeory != null ? "[" + catgeory.ToString().ToUpper() + "]" : "" + " ";
-            var modifiedS = prefixText + msg;
-            XRL.Messages.MessageQueue.AddPlayerMessage(modifiedS);
-            Debug.LogError(modifiedS);
-        }
-        else
-        {
-            Debug.LogWarning("[Laurus] Attempted to log an empty or null message.");
-        }
+
+        string prefixText = $"[Laurus][{category.ToString().ToUpper()}] ";
+        string modifiedS = prefixText + msg;
+
+        XRL.Messages.MessageQueue.AddPlayerMessage(modifiedS);
+        Debug.LogError(modifiedS);
     }
 }

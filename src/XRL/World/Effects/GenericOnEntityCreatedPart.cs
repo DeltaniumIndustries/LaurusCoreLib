@@ -33,17 +33,17 @@ namespace XRL.World.Parts
         public override bool HandleEvent(AfterObjectCreatedEvent E)
         {
             GameObject entity = ParentObject;
-            LL.Info($"[{GetType().Name}] {entity.DisplayName} has been created.");
+            LL.Info($"[{GetType().Name}] {entity.DisplayName} has been created.", LogCategory.Debug);
 
             if (IsDebug() || ShouldRun(entity))
             {
-                LL.Info($"[{GetType().Name}] Running logic for {entity.DisplayName}.");
+                LL.Info($"[{GetType().Name}] Running logic for {entity.DisplayName}.", LogCategory.Debug);
                 OnObjectCreated(entity);
             }
 
             if (ParentObject.RemovePart(GetType().Name))
             {
-                LL.Info($"[{GetType().Name}] Removed part from {entity.DisplayName}.");
+                LL.Info($"[{GetType().Name}] Removed part from {entity.DisplayName}.", LogCategory.Debug);
             }
 
             return base.HandleEvent(E);

@@ -4,7 +4,7 @@
 	"title": "{{glotrot|Laurus Core}}",
 	"description": "Core Laurus Library.",
 	"tags": "library",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"author": "{{glotrot|LunarLaurus}}",
 	"previewImage": "preview.png"
 }
