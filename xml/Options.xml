@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<options>
+    <option ID="OptionLaurusCoreLoggingEnabled" DisplayText="Logging: Enable all LaurusLogs (If disabled, no logs from any Laurus mod will be available)" Category="LaurusMods" Type="Checkbox" Default="Yes" />
+</options>
