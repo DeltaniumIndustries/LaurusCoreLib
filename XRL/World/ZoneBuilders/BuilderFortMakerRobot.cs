@@ -1,3 +1,4 @@
+using LaurusCoreLib.Net.Laurus.Util;
 using XRL.World;
 
 public class RobotFortMaker : FactionAffiliatedFortMaker

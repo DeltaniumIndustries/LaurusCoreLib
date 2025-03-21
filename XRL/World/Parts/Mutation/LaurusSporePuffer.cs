@@ -1,7 +1,6 @@
-using ConsoleLib.Console;
 using System;
 using System.Collections.Generic;
-using Wintellect.PowerCollections;
+using LaurusCoreLib.Net.Laurus.Util;
 using XRL.Rules;
 
 #nullable disable

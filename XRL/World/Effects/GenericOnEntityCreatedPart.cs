@@ -1,4 +1,6 @@
 using System;
+using LaurusCoreLib.Net.Laurus.Enums;
+using LaurusCoreLib.Net.Laurus.Logging;
 
 namespace XRL.World.Parts
 {
