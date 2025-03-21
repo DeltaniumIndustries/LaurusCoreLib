@@ -7,8 +7,8 @@
 		<LangVersion>9</LangVersion>
 		<GenerateAssemblyInfo>true</GenerateAssemblyInfo>
 		<GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
-		<QudLibPath>C:\Program Files (x86)\Steam\steamapps\common\Caves of Qud\CoQ_Data\Managed\</QudLibPath>
 		<DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
+		<QudLibPath>C:\Program Files (x86)\Steam\steamapps\common\Caves of Qud\CoQ_Data\Managed\</QudLibPath>
 	</PropertyGroup>
 	<ItemGroup>
 		<Reference Include="$(QudLibPath)/0Harmony.dll" />

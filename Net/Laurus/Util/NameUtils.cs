@@ -1,9 +1,9 @@
-
-using System.Collections.Generic;
+using XRL.Names;
 using XRL.World;
 
-namespace XRL.Names
+namespace LaurusCoreLib.Net.Laurus.Util
 {
+
     public static class NameUtils
     {
         public static string MakeQudishName(GameObject entity) => NameMaker.MakeName(For: entity, Culture: "Qudish");

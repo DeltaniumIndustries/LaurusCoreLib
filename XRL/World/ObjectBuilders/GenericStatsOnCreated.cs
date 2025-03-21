@@ -1,4 +1,3 @@
-using XRL.World.Parts;
 
 //<builder Name="ExampleBuilder" Stats="Strength,Hitpoints,MoveSpeed" ChanceOneIn="5" />
 namespace XRL.World.ObjectBuilders
