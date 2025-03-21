@@ -18,7 +18,7 @@ namespace XRL.World.Parts
 
         protected override void OnObjectCreated(GameObject entity)
         {
-            
+
         }
     }
 }
