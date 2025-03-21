@@ -5,7 +5,7 @@
         If disabled, no logs from any Laurus mod will be available in player.log and the in game messagebox.
         </helptext>
     </option>
-    <option ID="OptionLaurusCoreLoggingDebugEnabled" DisplayText="Logging: Enable all LaurusLogs" Category="LaurusMods" Type="Checkbox" Default="No">
+    <option ID="OptionLaurusCoreLoggingDebugEnabled" DisplayText="Logging: Enable all LaurusDebugLogs" Category="LaurusMods" Type="Checkbox" Default="No">
         <helptext>
         If enabled, logs lots of things from any and all Laurus mods.
         This will be available in player.log and the in game messagebox.

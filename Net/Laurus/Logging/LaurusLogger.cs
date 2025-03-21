@@ -1,4 +1,5 @@
 using LaurusCoreLib.Net.Laurus.Config;
+using LaurusCoreLib.Net.Laurus.Enums;
 using UnityEngine;
 
 namespace LaurusCoreLib.Net.Laurus.Logging
