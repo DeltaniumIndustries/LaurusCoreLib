@@ -1,5 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
+		<Version>1.0.3</Version>
 		<AssemblyName>LaurusCoreLib</AssemblyName>
 		<PackageId>net.LunarLaurus.Core</PackageId>
 		<Authors>LunarLaurus</Authors>

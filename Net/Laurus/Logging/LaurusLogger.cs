@@ -1,6 +1,5 @@
 using LaurusCoreLib.Net.Laurus.Config;
 using LaurusCoreLib.Net.Laurus.Enums;
-using UnityEngine;
 
 namespace LaurusCoreLib.Net.Laurus.Logging
 {
@@ -15,7 +14,7 @@ namespace LaurusCoreLib.Net.Laurus.Logging
             {
                 if (string.IsNullOrEmpty(msg))
                 {
-                    Debug.LogWarning("[Laurus] Attempted to log an empty or null message.");
+                    UnityEngine.Debug.LogWarning("[Laurus] Attempted to log an empty or null message.");
                 }
                 return;
             }
@@ -24,7 +23,7 @@ namespace LaurusCoreLib.Net.Laurus.Logging
             string modifiedS = prefixText + msg;
 
             XRL.Messages.MessageQueue.AddPlayerMessage(modifiedS);
-            Debug.LogError(modifiedS);
+            UnityEngine.Debug.LogError(modifiedS);
         }
     }
 }

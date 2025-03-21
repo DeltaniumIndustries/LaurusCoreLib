@@ -1,7 +1,6 @@
 
 //<builder Name="ExampleBuilder" Stats="Strength,Hitpoints,MoveSpeed" ChanceOneIn="5" />
 using System.Collections.Generic;
-using LaurusCoreLib.Net.Laurus.Util;
 
 namespace XRL.World.ObjectBuilders
 {

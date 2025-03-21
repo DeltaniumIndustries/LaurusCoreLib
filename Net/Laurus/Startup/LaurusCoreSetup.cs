@@ -4,7 +4,6 @@ using LaurusCoreLib.Net.Laurus.Enums;
 using LaurusCoreLib.Net.Laurus.Logging;
 using LaurusCoreLib.Net.Laurus.Util;
 using XRL;
-using XRL.World;
 
 namespace LaurusCoreLib.Net.Laurus.Startup
 {

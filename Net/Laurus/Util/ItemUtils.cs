@@ -1,3 +1,4 @@
+using LaurusCoreLib.Net.Laurus.Data;
 using XRL.World;
 
 namespace LaurusCoreLib.Net.Laurus.Util
@@ -8,13 +9,21 @@ namespace LaurusCoreLib.Net.Laurus.Util
         {
 
         }
-        public static void TryGiveItemToGameObjectFromPopulationTable(string PopTableName, GameObject Object)
+        public static bool TryGiveItemToGameObjectFromPopulationTable(QudLootTable LootTable, GameObject Object)
         {
-            TryGiveItemToGameObjectFromPopulationTable(PopTableName, Object, 0);
+            return TryGiveItemToGameObjectFromPopulationTable(LootTable, Object, 0);
         }
-        public static void TryGiveItemToGameObjectFromPopulationTable(string PopTableName, GameObject Object, int BonusModChance)
+        public static bool TryGiveItemToGameObjectFromPopulationTable(QudLootTable LootTable, GameObject Object, int BonusModChance)
         {
-            Object.ReceiveObjectFromPopulation(PopTableName, BonusModChance: BonusModChance);
+            return Object.ReceiveObjectFromPopulation(LootTable.TableName, BonusModChance: BonusModChance);
+        }
+
+        public static GameObject GetTieredArmour(int Tier){
+            return null;
+        }
+
+        public static GameObject GetTieredWeapon(int Tier){
+            return null;
         }
 
     }
