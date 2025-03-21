@@ -1,6 +1,5 @@
 using System;
 using Genkit;
-using XRL;
 using XRL.Core;
 
 namespace LaurusCoreLib.Net.Laurus.Util

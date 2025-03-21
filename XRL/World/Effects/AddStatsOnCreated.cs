@@ -1,5 +1,4 @@
 using System;
-using XRL.World;
 
 namespace XRL.World.Parts
 {

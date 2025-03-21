@@ -1,5 +1,4 @@
 using System;
-using XRL.Rules;
 using XRL.World.Anatomy;
 
 #nullable disable
